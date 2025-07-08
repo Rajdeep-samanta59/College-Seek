@@ -42,6 +42,7 @@ export const loginUser = async (req,res) => {
             return res.status(400).json({ msg: "Password does not match" });
         }
     } catch (error) {
+         console.log("Error while login in user:", error);
         return res.status(500).json({ msg: "Error while login in user" });
     }   
 }
