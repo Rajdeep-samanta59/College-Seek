@@ -18,3 +18,5 @@ app.use('/',router);
 // app.listen(process.env.PORT || 8000,()=> console.log(`Server is running successfully on PORT ${process.env.PORT}`));
 
 Connection();
+
+export default app;
